@@ -38,3 +38,54 @@ html {
   border-radius: 1rem 1rem 0.5rem 0.5rem;
   box-shadow: 0.5rem 1rem 2rem #222;
 }
+
+.window {
+  width: 12rem;
+  height: 15rem;
+  background-color: #aaa;
+  border: 0.4rem solid #333;
+  position: absolute;
+}
+
+.window::before {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #333;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+
+.window::after {
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-left-window {
+  top: 22rem;
+  left: 10rem;
+  border-radius: 50% 50% 0 0;
+}
+
+.top-right-window {
+  top: 22rem;
+  right: 10rem;
+  border-radius: 50% 50% 0 0;
+}
+
+.bottom-left-window {
+  top: 43rem;
+  left: 10rem;
+}
+
+.bottom-right-window {
+  top: 43rem;
+  right: 10rem;
+}
