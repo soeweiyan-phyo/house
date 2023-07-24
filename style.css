@@ -89,3 +89,31 @@ html {
   top: 43rem;
   right: 10rem;
 }
+
+.room {
+  width: 40rem;
+  height: 80%;
+  background-color: #fff;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  perspective: 100rem;
+}
+
+.room-roof {
+  width: 110%;
+  height: 20rem;
+  background-color: rgb(8, 67, 145);
+
+  position: absolute;
+  top: -10rem;
+  left: -5%;
+  transform: rotateX(30deg);
+  box-shadow: 0.2rem 0.5rem 1.5rem #000;
+  border-radius: 0.5rem 0.5rem 0.3rem 0.3rem;
+}
+
+.top-window {
+}
